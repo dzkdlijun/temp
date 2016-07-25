@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript" src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#loadBtn").click(function(){
+        $(".loadData").load("test.html",function(responseText,textStatus,XMLHttpRequest){
+             //返回的数据
+        });
+    });
+});
+</script>
+</head>
+
+<body>
+     <input type="button" value="load获取" id="loadBtn" />
+     <div>The data:</div>
+     <div class="loadData"></div>
+</body>
+</html>
